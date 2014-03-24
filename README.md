@@ -13,7 +13,7 @@ sudo ln -s key2bag/key2bag /usr/local/bin/key2bag
 ```
 mkdir ~/bin
 cp key2bag/key2bag ~/bin/key2bag
-echo "export PATH=~/bin:$PATH" >> ~/.bash_profile"
+echo "export PATH=~/bin:$PATH" >> ~/.bash_profile
 source ~/.bash_profile
 ```
 
