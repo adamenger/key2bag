@@ -3,13 +3,13 @@ key2bag
 
 ##Installation
 
-** Installing into system bin **
+####Installing into system bin
 ```
 git clone git@github.com:adamenger/key2bag.git
 sudo ln -s key2bag/key2bag /usr/local/bin/key2bag
 ```
 
-** Creating custom bin directory and adding it to your path **
+####Creating custom bin directory and adding it to your path
 ```
 mkdir ~/bin
 cp key2bag/key2bag ~/bin/key2bag
