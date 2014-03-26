@@ -31,3 +31,15 @@ $cat key.txt | key2bag
 ```
 
 Simply copy the string into your encrypted data bag and voila!
+
+You can also append the argument -n to remove the additional newlines allowing you copy the key straight to your keyboard using pbcopy for OSX.
+
+```
+$ cat key.txt | key2bag -n | pbcopy
+```
+
+Or using xclip for linux
+``` 
+$ cat key.txt | key2bag -n | xclip
+```
+
