@@ -4,9 +4,14 @@ import select
 
 # check to see if we have any data passed to stdin
 if select.select([sys.stdin,],[],[],0.0)[0]:
-  print "\n"
-  print repr(sys.stdin.read()).strip('\'')[:-2]
-  print "\n"
+  if len(sys.argv) > 1:
+    if sys.argv[1] == "-n":
+      print repr(sys.stdin.read()).strip('\'')[:-2]
+  else:
+    print "\n"
+    print repr(sys.stdin.read()).strip('\'')[:-2]
+    print "\n"
+  
 else:
   print "No data passed to stdin. Please try again."
 
